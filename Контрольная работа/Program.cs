@@ -43,7 +43,7 @@ string[] ResultArray(string[] array)
        int j = 0;
     for (int i = 0; i < array.Length; i += 1)
      {
-        if (array[i].Lenght <= 3) sz += 1;
+        if (array[i].Length <= 3) sz += 1;
      }
     string[] arrayRes = new string[sz];
     for (int i = 0;i < array.Length;i += 1)
@@ -63,6 +63,6 @@ string[] arraySet = FillArray();
 Console.WriteLine();
 Console.WriteLine("Первоначально заданный массив: ");
 PrintArray(arraySet);
-string[] arrayRes = FillArray(arraySet);
+string[] arrayRes = ResultArray(arraySet);
 Console.WriteLine("Новый массив из строк , длинна которых меньше, либо равна 3 символам: ");
 PrintArray(arrayRes);
